@@ -1,0 +1,202 @@
+
+:root {
+  --purple: #863b83;
+  --lpurple:#863b8333;
+}
+
+a{
+  color:var(--purple)
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size:15px;
+  line-height:1.5
+}
+
+.nav-bar{
+  overflow: hidden;
+  background-color: var(--purple);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  left:0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 70px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+.nav-bar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-bar a:hover {
+  background:white;
+  color: var(--purple);
+  transition: 0.3s;
+}
+
+[id]::before {
+  content: '';
+  display: block;
+  height:      100px;
+  margin-top: -100px;
+  visibility: hidden;
+}
+
+@keyframes zoomzoom {
+  from {   background-size: 100% 100%;  }  /* light yellow */
+  to   {   background-size: 0.2em 100%; }  /* assuming original was transparent */
+}
+
+div:target .cool-title { /* i.e when this element is navigated to (from a link) */
+  animation-name: zoomzoom;
+  animation-duration: 0.5s;
+}
+
+.exercise-popup{
+  font-family: 'Montserrat', sans-serif;
+  border:none;
+  margin:0px;
+  background:none;
+  padding:0;
+  color:var(--purple);
+}
+
+.exercise-popup:hover{
+  /*background-color:var(--lpurple);*/
+  animation-delay: 2s;
+}
+
+.main-text{
+  font-family: 'Montserrat', sans-serif;
+  font-size:14px;
+}
+
+.the-x{
+  color:white;
+  position:absolute;
+  right:5px;
+  top:0;
+}
+
+.button{
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+.popup-bg{
+  z-index:3;
+  display:none;
+  padding-top:100px;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  overflow:auto;
+  background-color:rgba(0,0,0,0.4);
+}
+
+.popup-content{
+  margin:auto;
+  background-color:#fff;
+  position:relative;
+  padding:0;
+  outline:0;
+  width:500px;
+  height:500px;
+}
+
+.subtitles{
+  font-size: 20px;
+  //background: var(--purple);
+}
+
+hr{
+  height: 1px;
+  background-color: var(--purple);
+  border: none;
+}
+
+.subsubtitles{
+  font-size: 15px;
+}
+
+.smol-text{
+  font-size: 12px;
+}
+
+.smol-text button{
+  font-size: 12px;
+}
+
+.welcome{
+  background-color:var(--lpurple);
+  padding: 20px;
+}
+
+.cool-underline {
+  background-image: linear-gradient(120deg, var(--purple) 0%, var(--purple) 100%);
+  /*background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);*/
+  background-repeat: no-repeat;
+  background-size: 0.2em 0%;
+  background-position: 0 95%;
+  transition: background-size 0.15s ease-in;
+}
+
+.cool-underline:hover {
+  background-size: 100% 7%;
+}
+
+.cool-title {
+  background-image: linear-gradient(120deg, var(--lpurple) 0%, var(--lpurple) 100%);
+  background-repeat: no-repeat;
+  background-size: 0.2em 100%;
+  background-position: 0 100% ;
+  transition: background-size 0.25s ease-in;
+  padding: 8px;
+  padding-left:14px;
+}
+
+
+.cool-title:hover {
+  background-size: 100% 100%;
+}
+
+
+
+.content{
+  padding-left: 5px;
+}
+
+.get-link{
+  font-size:12px;
+  text-decoration: none;
+  display: none;
+}
+
+.subsubtitles:hover .get-link {
+  display: inline-block;
+}
+
+.subtitles a{
+  text-decoration: none;
+  color:black;
+}
