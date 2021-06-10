@@ -1,3 +1,4 @@
+/*mmm yes my messy css :relif:*/
 
 :root {
   --purple: #863b83;
@@ -17,9 +18,9 @@ body{
 .nav-bar{
   overflow: hidden;
   background-color: var(--purple);
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  position: fixed;
+  top: 0;
+  width: 100%; 
   left:0;
   padding: 10px;
   display: flex;
@@ -29,7 +30,6 @@ body{
 .main {
   padding: 16px;
   margin-top: 70px;
-  height: 1500px; /* Used in this example to enable scrolling */
 }
 
 .nav-bar a {
