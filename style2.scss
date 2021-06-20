@@ -61,8 +61,8 @@ body{
 }
 
 @keyframes zoomzoom {
-  from {   background-size: 100% 100%;  }  /* light yellow */
-  to   {   background-size: 0.2em 100%; }  /* assuming original was transparent */
+  from {   background-size: 100% 100%;  } 
+  to   {   background-size: 0.2em 100%; } 
 }
 
 div:target .cool-title { /* i.e when this element is navigated to (from a link) */
@@ -223,3 +223,4 @@ span{
   color:black;
 }
 
+/* orz https://speckyboy.com/underline-text-effects-css/ */
